@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tabassamu Logistics Ltd — Website
 
-## Getting Started
+Marketing site for Tabassamu Logistics Ltd, a Kenya-based freight and cargo
+transport company connecting Nairobi to Tanzania through the Taveta border
+crossing, with support from a Mombasa office.
 
-First, run the development server:
+Built with [Next.js](https://nextjs.org) (App Router, TypeScript). Four pages:
+Home, About, Services (& Coverage), and Contact.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` — pages (`/`, `/about`, `/services`, `/contact`) and the root layout
+- `components/` — shared `Nav`, `Footer`, `ContactForm`, `PlaceholderImage`
+- `app/globals.css` — design tokens (color, type, spacing) and component
+  classes (buttons, cards, nav, form fields)
 
-## Learn More
+## Known placeholders — swap before launch
 
-To learn more about Next.js, take a look at the following resources:
+- **Favicon** (`app/favicon.ico`): still the default Next.js icon — replace
+  with a Tabassamu Logistics mark.
+- **Contact details** (`app/contact/page.tsx`): phone, WhatsApp and email are
+  placeholders.
+- **Photos**: hero/about images use a placeholder plate (`PlaceholderImage`).
+  Replace with real photography by swapping in an `<Image>` where each
+  `<PlaceholderImage label="..." />` is used.
+- **Testimonials** (`app/page.tsx`): client quotes are placeholders pending
+  real client feedback.
+- **Track Shipment**: the "Track Now" button on the home page is wired to `#`
+  — point it at TransportBook's public tracking URL once available.
+- **Contact form** (`components/ContactForm.tsx`): currently client-side only
+  (shows a confirmation, sends nothing). Wire it to a form backend or a
+  Next.js API route + email/SMS provider before relying on it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploys as-is on [Vercel](https://vercel.com/new) — import this repo, no
+extra configuration needed.
