@@ -30,7 +30,7 @@ export default function ContactPage() {
             <h4 style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: "0.06em", opacity: 0.6, margin: "0 0 8px" }}>
               Phone
             </h4>
-            <a href="tel:+254700000000" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
+            <a href="tel:+254713916340" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
               +254 700 000 000
             </a>
           </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
               Email
             </h4>
             <a href="mailto:info@tabassamulogistics.co.ke" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
-              info@tabassamulogistics.co.ke
+              tabasamulogisticltd254@gmail.com
             </a>
           </div>
           <div>
