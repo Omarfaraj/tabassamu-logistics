@@ -30,8 +30,9 @@ export default function ContactPage() {
             <h4 style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: "0.06em", opacity: 0.6, margin: "0 0 8px" }}>
               Phone
             </h4>
-            <a href="tel:+254713916340" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
-              +254 700 000 000
+            <a href="tel:+254700000000" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
+              +254 713 916 340
+
             </a>
           </div>
           <div style={{ marginBottom: 28 }}>
@@ -44,7 +45,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}
             >
-              +254 700 000 000
+              +254 713 916 340
             </a>
           </div>
           <div style={{ marginBottom: 28 }}>
