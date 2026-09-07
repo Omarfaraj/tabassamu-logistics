@@ -21,8 +21,12 @@ export default function Footer() {
         </div>
       </div>
       <hr className="hr" style={{ margin: "24px auto" }} />
-      <div className="wrap fine-print" style={{ paddingLeft: 0, paddingRight: 0 }}>
-        © Tabassamu Logistics Ltd — {new Date().getFullYear()}
+      <div
+        className="wrap fine-print"
+        style={{ paddingLeft: 0, paddingRight: 0, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}
+      >
+        <span>© Tabassamu Logistics Ltd — {new Date().getFullYear()}</span>
+        <a href="/downloads/Tabassamu-Logistics-Company-Profile.pptx">Company Profile (PPTX)</a>
       </div>
     </footer>
   );
