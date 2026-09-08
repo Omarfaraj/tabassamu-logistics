@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -6,6 +7,7 @@ export default function Footer() {
       <div className="wrap row" style={{ paddingLeft: 0, paddingRight: 0 }}>
         <div>
           <div className="nav-brand" style={{ marginBottom: 6 }}>
+            <Image src="/brand/logo-mark.png" alt="" width={26} height={26} style={{ height: 26, width: "auto" }} />
             Tabassamu Logistics
           </div>
           <div className="text-muted" style={{ fontSize: 13 }}>

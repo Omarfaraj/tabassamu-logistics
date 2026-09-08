@@ -166,6 +166,9 @@ textarea.input { min-height: 100px; resize: vertical; }
   flex-wrap: wrap;
 }
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-heading);
   font-weight: var(--font-heading-weight);
   font-size: 18px;

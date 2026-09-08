@@ -25,8 +25,10 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Known placeholders — swap before launch
 
-- **Favicon** (`app/favicon.ico`): still the default Next.js icon — replace
-  with a Tabassamu Logistics mark.
+- **Logo** (`public/brand/logo-mark.png`, `app/favicon.ico`): rasterized from
+  the supplied logo PDF (a design mockup page, not a vector export). Fine for
+  web use at current sizes; swap for a real vector (SVG/AI) file if the brand
+  team produces one, for crisper scaling at large sizes.
 - **Contact details** (`app/contact/page.tsx`): phone, WhatsApp and email are
   placeholders.
 - **Photos**: hero/about images use a placeholder plate (`PlaceholderImage`).

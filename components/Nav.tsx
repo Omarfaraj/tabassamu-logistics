@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -17,6 +18,7 @@ export default function Nav() {
   return (
     <nav className="nav">
       <Link href="/" className="nav-brand">
+        <Image src="/brand/logo-mark.png" alt="" width={30} height={30} priority style={{ height: 30, width: "auto" }} />
         Tabassamu Logistics
       </Link>
       <div className="nav-links">
