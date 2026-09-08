@@ -30,7 +30,7 @@ export default function ContactPage() {
             <h4 style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: "0.06em", opacity: 0.6, margin: "0 0 8px" }}>
               Phone
             </h4>
-            <a href="tel:+254700000000" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
+            <a href="tel:+254713916340" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
               +254 713 916 340
 
             </a>
@@ -40,7 +40,7 @@ export default function ContactPage() {
               WhatsApp
             </h4>
             <a
-              href="https://wa.me/254700000000"
+              href="https://wa.me/254713916340"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}
