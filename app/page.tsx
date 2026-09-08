@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import PhotoSlider from "@/components/PhotoSlider";
+
+const HERO_PHOTOS = [
+  { src: "/photos/jin-neee-CkWGKko2b_I-unsplash.jpg", alt: "A line of freight trucks loaded with shipping containers" },
+  { src: "/photos/bernd-dittrich-Xk1IfNnEhRA-unsplash.jpg", alt: "A truck loaded with a container beside stacked shipping containers" },
+  { src: "/photos/brian-kairuz-9UbkQW6h_kk-unsplash.jpg", alt: "Close-up of stacked shipping containers at a freight yard" },
+];
 
 const STATS = [
   { value: "2016", label: "Moving cargo since" },
@@ -99,7 +105,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <PlaceholderImage label="Drop a photo of a cargo truck or the Taveta border crossing" />
+        <PhotoSlider photos={HERO_PHOTOS} />
       </section>
 
       <hr className="hr" />

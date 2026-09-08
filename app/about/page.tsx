@@ -1,8 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import PlaceholderImage from "@/components/PlaceholderImage";
 
 export const metadata: Metadata = {
   title: "About",
@@ -63,7 +63,18 @@ export default function AboutPage() {
             between Nairobi, Taveta and Tanzania.
           </p>
         </div>
-        <PlaceholderImage label="Drop a photo of the Tabassamu team or a loaded truck" />
+        <figure
+          className="plate"
+          style={{ width: "100%", position: "relative", aspectRatio: "4 / 5", overflow: "hidden" }}
+        >
+          <Image
+            src="/photos/amin-yarban-cN_dT5LRHEM-unsplash.jpg"
+            alt="A container yard road stretching toward the horizon under a dramatic sky"
+            fill
+            sizes="(max-width: 860px) 100vw, 480px"
+            style={{ objectFit: "cover" }}
+          />
+        </figure>
       </section>
 
       <hr className="hr" />
