@@ -16,7 +16,7 @@ const lora = Lora({
 });
 
 const description =
-  "Tabassamu Logistics Ltd moves cargo from Nairobi to Tanzania through Taveta, backed by our team in Mombasa. Cross-border freight, real-time tracking, reliable timelines.";
+  "Tabassamu Logistics Ltd moves cargo from Nairobi to Tanzania across multiple border crossings, backed by our team in Mombasa. Cross-border freight, real-time tracking, reliable timelines.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

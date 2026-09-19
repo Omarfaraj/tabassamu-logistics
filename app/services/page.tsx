@@ -6,14 +6,14 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Services & Coverage",
   description:
-    "Cross-border freight from Nairobi to Tanzania via Taveta, Mombasa port support, and real-time shipment tracking, covering Nairobi to Dar es Salaam.",
+    "Cross-border freight from Nairobi to Tanzania across multiple border crossings, Mombasa port support, and real-time shipment tracking, covering Tanzania nationwide.",
 };
 
 const SERVICES = [
   {
     kicker: "Core route",
-    title: "Cross-Border Freight — Nairobi to Tanzania via Taveta",
-    body: "Our core route. We handle regular cargo movement across the Kenya–Tanzania border, with experience navigating Taveta border procedures so your shipment doesn't sit and wait.",
+    title: "Cross-Border Freight — Nairobi to Tanzania",
+    body: "We move cargo across the Kenya–Tanzania border through multiple crossing points — among them Taveta–Holili, Namanga, Horohoro/Lunga Lunga, and Isebania/Sirari — so your shipment isn't tied to a single route. If one crossing is congested or slow, we route around it.",
   },
   {
     kicker: "Coastal support",
@@ -29,9 +29,12 @@ const SERVICES = [
 
 const ROUTE = [
   { num: "01", place: "Nairobi", detail: "Head Office / Origin Point" },
-  { num: "02", place: "Taveta", detail: "Kenya–Tanzania Border Crossing" },
-  { num: "03", place: "Holili, Tanzania", detail: "Entry point on the Tanzanian side of the border" },
-  { num: "04", place: "Dar es Salaam", detail: "Onward destination, Tanzania" },
+  {
+    num: "02",
+    place: "Kenya–Tanzania Border",
+    detail: "Multiple crossing points, including Taveta–Holili, Namanga, Horohoro/Lunga Lunga, and Isebania/Sirari",
+  },
+  { num: "03", place: "Tanzania", detail: "Nationwide, wherever your cargo needs to go" },
   { num: "—", place: "Mombasa", detail: "Connected office" },
 ];
 
@@ -59,10 +62,10 @@ export default function ServicesPage() {
 
       <hr className="hr" />
 
-      <section className="wrap grid-2-5-7" style={{ paddingTop: 64, paddingBottom: 64, alignItems: "start" }}>
+      <section id="coverage" className="wrap grid-2-5-7" style={{ paddingTop: 64, paddingBottom: 64, alignItems: "start" }}>
         <div>
           <span className="kicker">Our coverage</span>
-          <h2 style={{ fontSize: 30, margin: 0 }}>Nairobi to Dar es Salaam, one corridor</h2>
+          <h2 style={{ fontSize: 30, margin: 0 }}>Nairobi to Tanzania, across multiple crossings</h2>
         </div>
         <div>
           {ROUTE.map((stop) => (

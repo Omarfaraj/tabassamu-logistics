@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Tabassamu Logistics Ltd is a Kenya-based freight and cargo transport company connecting Nairobi to Tanzania through the Taveta border crossing, since 2016.",
+    "Tabassamu Logistics Ltd is a Kenya-based freight and cargo transport company connecting Nairobi to Tanzania across multiple border crossings, since 2016.",
 };
 
 const WHY_US = [
   {
-    title: "Border Know-How",
-    body: "We know the Taveta crossing, so your cargo isn't delayed by guesswork.",
+    title: "Multi-Route Flexibility",
+    body: "Not locked to a single border crossing, so a delay at one route doesn't have to mean a delay for your cargo.",
   },
   {
     title: "Real-Time Tracking",
@@ -47,7 +47,9 @@ export default function AboutPage() {
         <div>
           <p style={{ fontSize: 16, lineHeight: 1.8, textAlign: "justify", hyphens: "auto", color: bodyText }}>
             Tabassamu Logistics Ltd is a Kenya-based freight and cargo transport company connecting Nairobi to
-            Tanzania through the Taveta border crossing, with additional support from our Mombasa office.
+            Tanzania at large — across multiple border crossings including Taveta–Holili, Namanga,
+            Horohoro/Lunga Lunga, and Isebania/Sirari, chosen based on what best serves each shipment — plus
+            additional support from our Mombasa office.
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.8, textAlign: "justify", hyphens: "auto", color: bodyText }}>
             We know every shipment carries more than boxes — it carries someone&apos;s business, income, and
@@ -60,7 +62,7 @@ export default function AboutPage() {
           </p>
           <p style={{ fontSize: 16, lineHeight: 1.8, color: bodyText, marginBottom: 0 }}>
             Since 2016, we&apos;ve been moving cargo across the Kenya–Tanzania corridor — a decade on the road
-            between Nairobi, Taveta and Tanzania.
+            between Nairobi and Tanzania.
           </p>
         </div>
         <figure

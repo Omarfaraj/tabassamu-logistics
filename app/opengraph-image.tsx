@@ -62,7 +62,7 @@ export default async function Image() {
             Your Cargo, Delivered Across Borders
           </div>
           <div style={{ display: "flex", fontSize: 26, color: "#e1ad66", marginTop: 18 }}>
-            Nairobi · Taveta · Tanzania — cross-border freight, real-time tracking
+            Nairobi · Multiple Border Crossings · Tanzania — cross-border freight, real-time tracking
           </div>
         </div>
       </div>

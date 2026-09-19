@@ -11,7 +11,7 @@ const HERO_PHOTOS = [
 
 const STATS = [
   { value: "2016", label: "Moving cargo since" },
-  { value: "1", label: "Border crossing, mastered — Taveta" },
+  { value: "4", label: "Border crossings served" },
   { value: "2", label: "Offices — Nairobi & Mombasa" },
   { value: "24/7", label: "Shipment tracking" },
 ];
@@ -19,8 +19,8 @@ const STATS = [
 const SERVICES = [
   {
     kicker: "Core route",
-    title: "Cross-Border Freight — Nairobi to Taveta",
-    body: "Regular cargo movement across the Kenya–Tanzania border, with experience navigating Taveta procedures so your shipment doesn't sit and wait.",
+    title: "Cross-Border Freight — Nairobi to Tanzania",
+    body: "We move cargo across the Kenya–Tanzania border through multiple crossing points, so your shipment isn't tied to a single route.",
   },
   {
     kicker: "Coastal support",
@@ -36,8 +36,8 @@ const SERVICES = [
 
 const WHY_US = [
   {
-    title: "Border Know-How",
-    body: "We know the Taveta crossing, so your cargo isn't delayed by guesswork.",
+    title: "Multi-Route Flexibility",
+    body: "Not locked to a single border crossing, so a delay at one route doesn't have to mean a delay for your cargo.",
   },
   {
     title: "Real-Time Tracking",
@@ -54,21 +54,11 @@ const WHY_US = [
 ];
 
 const TESTIMONIALS = [
-  {
-    quote:
-      "“Tabassamu got our stock across to Tanzania faster than we expected, no drama at the border.”",
-    attribution: "— Client Name, Business [Placeholder]",
-  },
-  {
-    quote:
-      "“Responsive on WhatsApp, and our shipment arrived exactly when they said it would.”",
-    attribution: "— Client Name, Business [Placeholder]",
-  },
-  {
-    quote:
-      "“They handled the paperwork end to end. One less thing for us to worry about.”",
-    attribution: "— Client Name, Business [Placeholder]",
-  },
+  { name: "Bella" },
+  { name: "Gideon Chaula" },
+  { name: "Josephine" },
+  { name: "Agnes" },
+  { name: "Mkali" },
 ];
 
 export default function HomePage() {
@@ -79,7 +69,7 @@ export default function HomePage() {
       <section className="wrap grid-2-7-5" style={{ paddingTop: 76, paddingBottom: 64, alignItems: "center" }}>
         <div>
           <span className="kicker" style={{ fontFeatureSettings: "'tnum' 1" }}>
-            Nairobi · Taveta · Tanzania
+            Nairobi · Multiple Border Crossings · Tanzania
           </span>
           <h1 style={{ fontWeight: 400, fontSize: "clamp(40px, 5.4vw, 60px)", lineHeight: 1.08 }}>
             Your Cargo, Delivered Across Borders — On Time, Every Time
@@ -93,8 +83,9 @@ export default function HomePage() {
               marginTop: 24,
             }}
           >
-            Tabassamu Logistics Ltd moves your goods from Nairobi to Tanzania through Taveta, backed by our team
-            in Mombasa. You focus on your business — we&apos;ll handle the road.
+            Tabassamu Logistics Ltd moves your goods from Nairobi to Tanzania, with the flexibility to route
+            through multiple border crossings — backed by our team in Mombasa. You focus on your business —
+            we&apos;ll handle the road.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 32 }}>
             <Link href="/contact" className="btn btn-primary">
@@ -145,7 +136,8 @@ export default function HomePage() {
         <div>
           <p style={{ fontSize: "15.5px", lineHeight: 1.8, textAlign: "justify", hyphens: "auto", color: "color-mix(in srgb, var(--color-text) 82%, transparent)" }}>
             Tabassamu Logistics Ltd is a Kenya-based freight and cargo transport company connecting Nairobi to
-            Tanzania through the Taveta border crossing, with additional support from our Mombasa office.
+            Tanzania across multiple border crossings — including Taveta–Holili, Namanga, Horohoro/Lunga Lunga,
+            and Isebania/Sirari — plus additional support from our Mombasa office.
           </p>
           <p style={{ fontSize: "15.5px", lineHeight: 1.8, textAlign: "justify", hyphens: "auto", color: "color-mix(in srgb, var(--color-text) 82%, transparent)" }}>
             It carries someone&apos;s business, income, and promise to a customer — that&apos;s why we treat every
@@ -196,11 +188,21 @@ export default function HomePage() {
         <span className="kicker" style={{ marginBottom: 24 }}>What clients say</span>
         <div className="grid-3">
           {TESTIMONIALS.map((t) => (
-            <figure key={t.attribution + t.quote}>
-              <blockquote style={{ fontFamily: "var(--font-heading)", fontSize: 19, lineHeight: 1.5, margin: 0, fontWeight: 400 }}>
-                {t.quote}
+            <figure key={t.name}>
+              <blockquote
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  fontStyle: "italic",
+                  fontSize: 16,
+                  lineHeight: 1.5,
+                  margin: 0,
+                  fontWeight: 400,
+                  opacity: 0.55,
+                }}
+              >
+                Testimonial coming soon
               </blockquote>
-              <figcaption style={{ fontSize: 13, opacity: 0.65, marginTop: 14 }}>{t.attribution}</figcaption>
+              <figcaption style={{ fontSize: 13, opacity: 0.65, marginTop: 14 }}>— {t.name}</figcaption>
             </figure>
           ))}
         </div>
