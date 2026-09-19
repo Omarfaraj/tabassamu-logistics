@@ -51,8 +51,8 @@ export default function ContactPage() {
             <h4 style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: "0.06em", opacity: 0.6, margin: "0 0 8px" }}>
               Email
             </h4>
-            <a href="mailto:tabasamulogisticltd254@gmail.com" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
-              tabasamulogisticltd254@gmail.com
+            <a href="mailto:tabasamulogisticltd25@gmail.com" style={{ fontSize: 18, fontFamily: "var(--font-heading)" }}>
+              tabasamulogisticltd25@gmail.com
             </a>
           </div>
           <div>
