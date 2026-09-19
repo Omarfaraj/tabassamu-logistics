@@ -54,11 +54,31 @@ const WHY_US = [
 ];
 
 const TESTIMONIALS = [
-  { name: "Bella" },
-  { name: "Gideon Chaula" },
-  { name: "Josephine" },
-  { name: "Agnes" },
-  { name: "Mkali" },
+  {
+    name: "Bella",
+    quote:
+      "Tabassamu Logistics has made the shipping process much easier and more convenient for us. Their service has been reliable, and we appreciate the support throughout the process.",
+  },
+  {
+    name: "Gideon Chaula",
+    quote:
+      "What stood out to me was the professionalism and communication throughout the shipping process. Tabassamu Logistics has made it easier to move goods across borders with confidence.",
+  },
+  {
+    name: "Josephine",
+    quote:
+      "I've had a good experience with Tabassamu Logistics. The process is straightforward, the team is helpful, and I feel confident knowing my shipment is being handled properly.",
+  },
+  {
+    name: "Agnes",
+    quote:
+      "Tabassamu Logistics provides a dependable shipping service and keeps the process simple from start to finish. Their communication and attention to customers really stood out to me.",
+  },
+  {
+    name: "Mkali",
+    quote:
+      "Shipping can be stressful, but Tabassamu Logistics makes the process much easier. Their team is responsive, professional, and focused on making sure shipments reach their destination safely.",
+  },
 ];
 
 export default function HomePage() {
@@ -192,15 +212,13 @@ export default function HomePage() {
               <blockquote
                 style={{
                   fontFamily: "var(--font-heading)",
-                  fontStyle: "italic",
-                  fontSize: 16,
+                  fontSize: 18,
                   lineHeight: 1.5,
                   margin: 0,
                   fontWeight: 400,
-                  opacity: 0.55,
                 }}
               >
-                Testimonial coming soon
+                “{t.quote}”
               </blockquote>
               <figcaption style={{ fontSize: 13, opacity: 0.65, marginTop: 14 }}>— {t.name}</figcaption>
             </figure>
